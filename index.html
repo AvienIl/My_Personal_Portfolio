@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My aesthetic student portfolio showcasing my education, skills and projects.">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar container">
+            <a href="#home" class="logo">my<span>portfolio.</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#organizations">Organizations</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero container">
+
+        <div class="hero-content reveal">
+            <span class="small-label">✿ WELCOME TO MY LITTLE CORNER</span>
+
+            <h1>Hello, I'm <span>Abi</span>!</h1>
+
+            <h2>
+                A <span id="typing"></span>
+            </h2>
+
+            <p>
+                A passionate student who loves learning, exploring
+                technology, and turning creative ideas into reality.
+                Thank you for visiting my portfolio!
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">
+                    Explore My Work <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="assets/cv.pdf" download class="btn secondary-btn">
+                    Download CV <i class="fas fa-download"></i>
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/AvienIl" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.instagram.com/loh_bhie?exln=eTlreGd2cTlucjd2" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://facebook.com/abigail.caranay" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/caranay-abigail-724454423" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image reveal">
+            <div class="photo-frame">
+                <img src="assets/profile.jpg" alt="My profile picture"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                <div class="photo-placeholder">
+                    <i class="fas fa-user"></i>
+                    <span>Add Your Photo</span>
+                </div>
+            </div>
+
+            <div class="floating-flower flower-one">✿</div>
+            <div class="floating-flower flower-two">✧</div>
+            <div class="floating-flower flower-three">♡</div>
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section container">
+
+        <div class="section-heading reveal">
+            <span>GET TO KNOW ME</span>
+            <h2>About <em>Me</em></h2>
+            <p>A little introduction about myself.</p>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-card reveal">
+                <div class="icon-circle pink">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+
+                <h3>Who Am I?</h3>
+
+                <p>
+                    Hi! I'm Abi, a 2nd year student from Technological University of the Philippines,
+                    currently taking up Bachelor of Science in Information Technology. I enjoy
+                    discovering new things, developing my skills,
+                    and learning about technology.
+                </p>
+            </div>
+
+            <div class="about-card reveal">
+                <div class="icon-circle lavender">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <h3>My Interests</h3>
+
+                <p>
+                    I love web design, creativity, art, exploring
+                    technology, listening to music, and working
+                    on projects that help me grow as a student.
+                </p>
+            </div>
+
+            <div class="about-card reveal">
+                <div class="icon-circle blue">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+
+                <h3>My Goals</h3>
+
+                <p>
+                    My goal is to become a successful professional,
+                    gain valuable experience, and use my knowledge
+                    to create meaningful solutions.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section container">
+
+        <div class="section-heading reveal">
+            <span>MY ACADEMIC JOURNEY</span>
+            <h2>My <em>Education</em></h2>
+            <p>Every step is part of my learning journey.</p>
+        </div>
+
+        <div class="education-list reveal">
+
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+
+                <div class="education-card">
+                    <span class="date">2025 - Present</span>
+                    <h3>Technological University of the Philippines</h3>
+                    <p>Bachelor of Science in Information Technology</p>
+                    <small>Currently studying</small>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+
+                <div class="education-card">
+                    <span class="date">2023 - 2025</span>
+                    <h3>Kalayaan National High School</h3>
+                    <p>Science, Technology, Engineering, and Mathematics</p>
+                    <small>Senior High School Graduate</small>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+
+                <div class="education-card">
+                    <span class="date">2019 - 2022</span>
+                    <h3>Kalayaan National High School</h3>
+                    <p>Junior High School</p>
+                    <small>Completed secondary education</small>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ORGANIZATIONS SECTION -->
+    <section id="organizations" class="section container">
+
+        <div class="section-heading reveal">
+            <span>BEYOND THE CLASSROOM</span>
+            <h2>Organizations <em>Involved</em></h2>
+            <p>Communities where I learn, serve, and grow.</p>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-card reveal">
+                <div class="icon-circle lavender"><i class="fas fa-laptop-code"></i></div>
+                <h3>Google Developer Groups on Campus (GDGoC)- TUPM</h3>
+                <span class="org-role">Operations Dept. Junior Project Manager | 2026 - 2027</span>
+                <span class="org-role">Member | 2025 - 2026</span>
+                <p>Supports the planning, scheduling, and tracking of projects so the department’s work stays organized and on deadline.</p>
+            </div>
+
+            <div class="about-card reveal">
+                <div class="icon-circle pink"><i class="fas fa-users"></i></div>
+                <h3>Computer Students' Association (COMPASS) - TUPM</h3>
+                <span class="org-role">Events and Logistics Committee Associate | 2026-2027</span>
+                <span class="org-role">Member | 2025-2026</span>
+                <p>Describe what the organization does and what you do in it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section container">
+
+        <div class="section-heading reveal">
+            <span>THINGS I'M LEARNING</span>
+            <h2>My <em>Skills</em></h2>
+            <p>Skills I continue to develop and improve.</p>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card reveal">
+                <div class="skill-icon pink">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3>Learning Languages</h3>
+                <p>C, C++, java, and python</p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon lavender">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3>Web Design</h3>
+                <p>Website styling via. Wix Studio but eager to learn how to code in Html, and Python gui</p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon blue">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>Creativity</h3>
+                <p>Design and ideas</p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon green">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Teamwork</h3>
+                <p>Leadership and Collaboration</p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon pink">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>Communication</h3>
+                <p>Sharing ideas</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section container">
+
+        <div class="section-heading reveal">
+            <span>MY CREATIVE WORK</span>
+            <h2>My <em>Projects</em></h2>
+            <p>Some of the things I've created and learned.</p>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Projects 1 to 5: Student Management System logo -->
+
+            <div class="project-card reveal">
+                <div class="project-image pink-bg">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <div class="project-info">
+                    <span class="project-number">PROJECT 01</span>
+                    <h3>AstroKnowMe - Academic Project Website</h3>
+
+                    <p>
+                        My first ever website! It is a simple website created using
+                        Wix Studio to showcase information about Astronomy.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>2023</span>
+                        <span>Wix Studio</span>
+                        <span>Website Project</span>
+                    </div>
+
+                    <a href="https://digipawsweb.wixstudio.com/astroknowme?rc=test-site" class="project-link" target="_blank" rel="noopener noreferrer">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image lavender-bg">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <div class="project-info">
+                    <span class="project-number">PROJECT 02</span>
+                    <h3>DigiPaws</h3>
+
+                    <p>
+                        Research based website for animals (Website Prototype). Locating vets near the owners area, having direct communication with the veterinarian and ramking based on rating, queueing feature of schedule, and providing emergency contacts to PAWS and National emergency hotline for animals.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>2025</span>
+                        <span>Wix Studio</span>
+                        <span>Website Project</span>
+                    </div>
+
+                    <a href="https://digipawsweb.wixstudio.com/my-site-5?rc=test-site" class="project-link" target="_blank" rel="noopener noreferrer">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image pink-bg">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <div class="project-info">
+                    <span class="project-number">PROJECT 03</span>
+                    <h3>Shop Reciept</h3>
+
+                    <p>
+                        A student project created to mimic actual receipt that markets provide.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>2025</span>
+                        <span>C</span>
+                        <span>Computer Programming 1</span>
+                    </div>
+
+                    <a href="https://shop-reciept.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image lavender-bg">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <div class="project-info">
+                    <span class="project-number">PROJECT 04</span>
+                    <h3>Huffman Text Compression</h3>
+
+                    <p>
+                        Compresses and Decompresses text file using Huffman's code.
+
+                    <div class="project-tags">
+                        <span>2026</span>
+                        <span>C++</span>
+                        <span>Data Structures and Algorithms</span>
+                    </div>
+
+                    <a href="https://github.com/AvienIl/HuffmansCode_Compress_and_Decompression_of_File" class="project-link" target="_blank" rel="noopener noreferrer">
+                        View Code <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="project-card reveal">
+                <div class="project-image lavender-bg">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <div class="project-info">
+                    <span class="project-number">PROJECT 05</span>
+                    <h3>ATM Bank System</h3>
+
+                    <p>
+                        A portrayal of how banks work using a USB stick as a "Card".
+                    </p>
+
+                    <div class="project-tags">
+                        <span>2026</span>
+                        <span>Data Structures and Algorithms</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <a href="https://github.com/AvienIl/ATM_Banking_System" class="project-link" target="_blank" rel="noopener noreferrer">
+                        View Code <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projects 6 to 8: game logo -->
+             <div class="project-card reveal">
+                <div class="project-image blue-bg">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+
+                <div class="project-info">
+                    <span class="project-number">PROJECT 06</span>
+                    <h3>Arithmetic Quiz Game</h3>
+
+                    <p>
+                        A student project designed to create a mathematical game that encourages students thinking skills with updated ranking system each operator.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>2025</span>
+                        <span>C++</span>
+                        <span>Computer Programming 2</span>
+                    </div>
+
+                    <a href="https://github.com/AvienIl/ArithmeticQuizGame" class="project-link" target="_blank" rel="noopener noreferrer">
+                        View Code <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image peach-bg">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+
+                <div class="project-info">
+                    <span class="project-number">PROJECT 07</span>
+                    <h3>Maze of the Cursed Mind!</h3>
+
+                    <p>
+                        The maze shifts mid game with invible traps that determines whether the player will live or die based on how well they answer the questions.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>2025</span>
+                        <span>C</span>
+                        <span>Computer Programming 1</span>
+                    </div>
+
+                    <a href="https://your-maze-game-url.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section container">
+
+        <div class="section-heading reveal">
+            <span>LET'S CONNECT</span>
+            <h2>Contact <em>Me</em></h2>
+            <p>I'd love to hear from you!</p>
+        </div>
+
+        <div class="contact-card reveal">
+
+            <div class="contact-decoration">♡</div>
+
+            <h3>Have something in mind?</h3>
+
+            <p>
+                Whether it's a school project, collaboration,
+                or opportunity, feel free to send me a message.
+            </p>
+
+            <a href="abigailcaranay@gmail.com" class="btn primary-btn">
+                <i class="fas fa-envelope"></i>
+                Say Hello!
+            </a>
+
+            <div class="contact-socials">
+                <a href="https://github.com/AvienIl" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.instagram.com/loh_bhie?exln=eTlreGd2cTlucjd2" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://facebook.com/abigail.caranay" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/caranay-abigail-724454423" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Made with <span>♡</span> by Abi♡</p>
+        <p>© <span id="year"></span> All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
