@@ -1,8 +1,3 @@
-
-// ============================
-// MOBILE NAVIGATION
-// ============================
-
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
@@ -16,8 +11,6 @@ menuToggle.addEventListener("click", () => {
         : '<i class="fas fa-bars"></i>';
 });
 
-// Close menu after selecting a link
-
 document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
         navLinks.classList.remove("show");
@@ -27,11 +20,6 @@ document.querySelectorAll(".nav-links a").forEach(link => {
         menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
     });
 });
-
-
-// ============================
-// TYPING ANIMATION
-// ============================
 
 const typingElement = document.getElementById("typing");
 
@@ -79,11 +67,6 @@ function typeEffect() {
 
 typeEffect();
 
-
-// ============================
-// SCROLL REVEAL ANIMATION
-// ============================
-
 const revealElements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -107,10 +90,26 @@ revealElements.forEach(element => {
     observer.observe(element);
 });
 
-
-// ============================
-// AUTOMATIC COPYRIGHT YEAR
-// ============================
-
 document.getElementById("year").textContent =
     new Date().getFullYear();
+
+const copyEmailBtn = document.getElementById('copy-email-btn');
+const btnText = document.getElementById('btn-text');
+
+if (copyEmailBtn) {
+    copyEmailBtn.addEventListener('click', () => {
+        const email = 'abigailcaranay@gmail.com';
+        
+        navigator.clipboard.writeText(email).then(() => {
+            btnText.innerText = 'Email Copied! ♡';
+            copyEmailBtn.style.background = '#9a83c9';
+            
+            setTimeout(() => {
+                btnText.innerText = 'Say Hello!';
+                copyEmailBtn.style.background = '';
+            }, 2500);
+        }).catch(err => {
+            console.error('Failed to copy email: ', err);
+        });
+    });
+}
