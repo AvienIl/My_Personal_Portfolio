@@ -11,7 +11,6 @@ menuToggle.addEventListener("click", () => {
         : '<i class="fas fa-bars"></i>';
 });
 
-
 document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
         navLinks.classList.remove("show");
@@ -21,7 +20,6 @@ document.querySelectorAll(".nav-links a").forEach(link => {
         menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
     });
 });
-
 
 const typingElement = document.getElementById("typing");
 
@@ -37,7 +35,6 @@ let charIndex = 0;
 let deleting = false;
 
 function typeEffect() {
-
     const currentWord = words[wordIndex];
 
     if (deleting) {
@@ -55,12 +52,9 @@ function typeEffect() {
         deleting = true;
         speed = 1500;
     }
-
     else if (deleting && charIndex === 0) {
         deleting = false;
-
         wordIndex = (wordIndex + 1) % words.length;
-
         speed = 400;
     }
 
@@ -69,22 +63,15 @@ function typeEffect() {
 
 typeEffect();
 
-
 const revealElements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver((entries, observer) => {
-
     entries.forEach(entry => {
-
         if (entry.isIntersecting) {
-
             entry.target.classList.add("active");
-
             observer.unobserve(entry.target);
         }
-
     });
-
 }, {
     threshold: 0.12
 });
@@ -93,17 +80,15 @@ revealElements.forEach(element => {
     observer.observe(element);
 });
 
-
 document.getElementById("year").textContent =
     new Date().getFullYear();
-
 
 const copyEmailBtn = document.getElementById('copy-email-btn');
 const btnText = document.getElementById('btn-text');
 
 if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', () => {
-        const email = 'abigailcaranay237@gmail.com';
+        const email = 'abigailcaranay@gmail.com';
         
         navigator.clipboard.writeText(email).then(() => {
             btnText.innerText = 'Email Copied! ♡';
@@ -116,5 +101,39 @@ if (copyEmailBtn) {
         }).catch(err => {
             console.error('Failed to copy email: ', err);
         });
+    });
+}
+
+const cursor = document.querySelector('.custom-cursor');
+const cursorDot = document.querySelector('.custom-cursor-dot');
+
+if (cursor && cursorDot) {
+    let mouseX = 0, mouseY = 0;
+    let cursorX = 0, cursorY = 0;
+
+    window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        cursorDot.style.left = `${mouseX}px`;
+        cursorDot.style.top = `${mouseY}px`;
+    });
+
+    function animateCursor() {
+        cursorX += (mouseX - cursorX) * 0.15;
+        cursorY += (mouseY - cursorY) * 0.15;
+
+        cursor.style.left = `${cursorX}px`;
+        cursor.style.top = `${cursorY}px`;
+
+        requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    const hoverables = document.querySelectorAll('a, button, .btn, .project-card, .about-card, .skill-card');
+
+    hoverables.forEach(el => {
+        el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+        el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
     });
 }
