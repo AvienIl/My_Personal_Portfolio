@@ -207,6 +207,7 @@ header {
     transform: translateY(-5px);
 }
 
+
 .hero-image {
     position: relative;
     flex: 0 0 340px;
@@ -372,6 +373,7 @@ header {
     color: var(--muted);
 }
 
+
 .orgs-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -443,6 +445,7 @@ header {
 .education-card small {
     color: var(--muted);
 }
+
 
 .skills-grid {
     display: flex;
@@ -653,6 +656,7 @@ footer span {
     color: var(--pink-dark);
 }
 
+
 @keyframes float {
     0%, 100% {
         transform: translateY(0);
@@ -673,6 +677,10 @@ footer span {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
 
 @media (max-width: 900px) {
     .hero {
