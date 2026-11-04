@@ -103,7 +103,7 @@ const btnText = document.getElementById('btn-text');
 
 if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', () => {
-        const email = 'abigailcaranay@gmail.com';
+        const email = 'abigailcaranay237@gmail.com';
         
         navigator.clipboard.writeText(email).then(() => {
             btnText.innerText = 'Email Copied! ♡';
