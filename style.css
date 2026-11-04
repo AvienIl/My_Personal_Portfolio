@@ -1,7 +1,3 @@
-/* =========================
-   PASTEL COLOR PALETTE
-========================= */
-
 :root {
     --background: #fffaf8;
     --white: #ffffff;
@@ -46,10 +42,6 @@ a {
 section {
     scroll-margin-top: 85px;
 }
-
-/* =========================
-   NAVIGATION
-========================= */
 
 header {
     background: rgba(255, 250, 248, 0.94);
@@ -104,10 +96,6 @@ header {
     cursor: pointer;
 }
 
-/* =========================
-   BUTTONS
-========================= */
-
 .btn {
     display: inline-block;
     padding: 12px 23px;
@@ -115,6 +103,9 @@ header {
     font-size: 14px;
     font-weight: 700;
     transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .primary-btn {
@@ -139,10 +130,6 @@ header {
     background: var(--lavender);
     transform: translateY(-4px);
 }
-
-/* =========================
-   HERO
-========================= */
 
 .hero {
     min-height: 620px;
@@ -220,8 +207,6 @@ header {
     transform: translateY(-5px);
 }
 
-/* Profile picture */
-
 .hero-image {
     position: relative;
     flex: 0 0 340px;
@@ -289,10 +274,6 @@ header {
     animation-delay: 1s;
 }
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
-
 .section {
     padding-top: 85px;
     padding-bottom: 85px;
@@ -324,10 +305,6 @@ header {
     color: var(--muted);
     font-size: 14px;
 }
-
-/* =========================
-   ABOUT
-========================= */
 
 .about-grid {
     display: grid;
@@ -395,8 +372,6 @@ header {
     color: var(--muted);
 }
 
-/* Organizations */
-
 .orgs-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -412,10 +387,6 @@ header {
     font-weight: 800;
     margin-bottom: 8px;
 }
-
-/* =========================
-   EDUCATION
-========================= */
 
 .education-list {
     max-width: 750px;
@@ -473,10 +444,6 @@ header {
     color: var(--muted);
 }
 
-/* =========================
-   SKILLS (Centered Flex Layout)
-========================= */
-
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -520,10 +487,6 @@ header {
     color: var(--muted);
     font-size: 13px;
 }
-
-/* =========================
-   PROJECTS (Centered Flex Layout)
-========================= */
 
 .projects-grid {
     display: flex;
@@ -631,10 +594,6 @@ header {
     color: var(--purple);
 }
 
-/* =========================
-   CONTACT
-========================= */
-
 .contact-card {
     position: relative;
     max-width: 750px;
@@ -682,10 +641,6 @@ header {
     transform: translateY(-5px);
 }
 
-/* =========================
-   FOOTER
-========================= */
-
 footer {
     background: #eaf2f6;
     text-align: center;
@@ -697,10 +652,6 @@ footer {
 footer span {
     color: var(--pink-dark);
 }
-
-/* =========================
-   ANIMATIONS
-========================= */
 
 @keyframes float {
     0%, 100% {
@@ -722,10 +673,6 @@ footer span {
     opacity: 1;
     transform: translateY(0);
 }
-
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
 
 @media (max-width: 900px) {
     .hero {
@@ -832,8 +779,6 @@ footer span {
         align-items: center;
     }
 }
-
-/* Accessibility */
 
 @media (prefers-reduced-motion: reduce) {
     *,
