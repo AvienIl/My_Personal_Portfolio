@@ -105,18 +105,14 @@ if (copyEmailBtn) {
 }
 
 const cursor = document.querySelector('.custom-cursor');
-const cursorDot = document.querySelector('.custom-cursor-dot');
 
-if (cursor && cursorDot) {
+if (cursor) {
     let mouseX = 0, mouseY = 0;
     let cursorX = 0, cursorY = 0;
 
     window.addEventListener('mousemove', (e) => {
         mouseX = e.clientX;
         mouseY = e.clientY;
-
-        cursorDot.style.left = `${mouseX}px`;
-        cursorDot.style.top = `${mouseY}px`;
     });
 
     function animateCursor() {
