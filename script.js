@@ -11,6 +11,7 @@ menuToggle.addEventListener("click", () => {
         : '<i class="fas fa-bars"></i>';
 });
 
+
 document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
         navLinks.classList.remove("show");
@@ -20,6 +21,7 @@ document.querySelectorAll(".nav-links a").forEach(link => {
         menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
     });
 });
+
 
 const typingElement = document.getElementById("typing");
 
@@ -67,6 +69,7 @@ function typeEffect() {
 
 typeEffect();
 
+
 const revealElements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -90,8 +93,10 @@ revealElements.forEach(element => {
     observer.observe(element);
 });
 
+
 document.getElementById("year").textContent =
     new Date().getFullYear();
+
 
 const copyEmailBtn = document.getElementById('copy-email-btn');
 const btnText = document.getElementById('btn-text');
