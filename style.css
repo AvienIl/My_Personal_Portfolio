@@ -207,7 +207,6 @@ header {
     transform: translateY(-5px);
 }
 
-
 .hero-image {
     position: relative;
     flex: 0 0 340px;
@@ -373,7 +372,6 @@ header {
     color: var(--muted);
 }
 
-
 .orgs-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -445,7 +443,6 @@ header {
 .education-card small {
     color: var(--muted);
 }
-
 
 .skills-grid {
     display: flex;
@@ -656,12 +653,10 @@ footer span {
     color: var(--pink-dark);
 }
 
-
 @keyframes float {
     0%, 100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-12px);
     }
@@ -678,9 +673,46 @@ footer span {
     transform: translateY(0);
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
+@media (pointer: fine) {
+    body {
+        cursor: none;
+    }
+
+    a, button, input, textarea, .btn, .project-card, .about-card, .skill-card {
+        cursor: none;
+    }
+}
+
+.custom-cursor {
+    font-size: 22px;
+    color: var(--pink-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.15s ease-out, color 0.2s ease;
+    user-select: none;
+}
+
+.custom-cursor-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+}
+
+body.cursor-hover .custom-cursor {
+    transform: translate(-50%, -50%) scale(1.5) rotate(15deg);
+    color: var(--purple);
+}
 
 @media (max-width: 900px) {
     .hero {
