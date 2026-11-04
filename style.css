@@ -696,19 +696,6 @@ footer span {
     user-select: none;
 }
 
-.custom-cursor-dot {
-    width: 6px;
-    height: 6px;
-    background-color: var(--purple);
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 10000;
-    transform: translate(-50%, -50%);
-}
-
 body.cursor-hover .custom-cursor {
     transform: translate(-50%, -50%) scale(1.5) rotate(15deg);
     color: var(--purple);
